@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0ff2d10c-6cb9-4afd-b249-03bcc6fbdfa7">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="cliente" class="java.lang.String"/>
+	<field name="producto" class="java.lang.String"/>
+	<field name="unidades" class="java.lang.String"/>
+	<field name="kilos" class="java.lang.String"/>
+	<field name="precioxunidad" class="java.lang.String"/>
+	<field name="precioxkilo" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="195" y="0" width="152" height="38" uuid="1b4a7730-b077-4ced-ae1f-e7d46f700037"/>
+				<textElement>
+					<font fontName="Lucida Sans Unicode" size="24"/>
+				</textElement>
+				<text><![CDATA[EMBUTIDOS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="11" width="108" height="20" uuid="f16fd1aa-72f9-4a44-80f3-a5f0e4b8f09d"/>
+				<text><![CDATA[cliente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="145" y="11" width="50" height="20" uuid="3577b4f3-2036-44fa-81b2-29a8b388b12d"/>
+				<text><![CDATA[producto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="265" y="11" width="44" height="20" uuid="d49598d7-7c56-4035-b6e9-cc4f8e6d2768"/>
+				<text><![CDATA[unidades]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="347" y="11" width="38" height="20" uuid="355d6389-9811-44ba-9799-dae17a44701a"/>
+				<text><![CDATA[kilos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="11" width="100" height="20" uuid="21f4d965-2827-4299-a4a2-fbdfcc95516f"/>
+				<text><![CDATA[precioxkilo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="508" y="11" width="66" height="20" uuid="59a82a31-7c98-4002-867d-e37ac80aed54"/>
+				<text><![CDATA[precioxunidad]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="305" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="14" width="145" height="20" uuid="4aeb9de5-7dbe-4370-a03a-45ee17aec709">
+					<property name="net.sf.jasperreports.export.pdf.tag.table" value="full"/>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cliente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="145" y="14" width="100" height="20" uuid="3f839d54-1dec-4dec-8909-a34b7108b7f9">
+					<property name="net.sf.jasperreports.export.pdf.tag.table" value="full"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{producto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="265" y="14" width="62" height="20" uuid="398e8675-14e4-45c5-b5bc-a15b436e1809">
+					<property name="net.sf.jasperreports.export.pdf.tag.table" value="full"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{unidades}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="347" y="14" width="41" height="20" uuid="5adc166a-8264-4016-a7e5-977e6f4883ca">
+					<property name="net.sf.jasperreports.export.pdf.tag.table" value="full"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{kilos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="396" y="14" width="100" height="20" uuid="23b5aaf1-2bf7-4ada-a622-8d6863e04197">
+					<property name="net.sf.jasperreports.export.pdf.tag.table" value="full"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{precioxkilo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="508" y="14" width="86" height="20" uuid="d971a1ed-34f3-4434-af29-29b7a2584baa">
+					<property name="net.sf.jasperreports.export.pdf.tag.table" value="full"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{precioxunidad}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
